@@ -1,0 +1,30 @@
+{
+  "name": "@tumblewader/express-auto-catch-router",
+  "version": "1.0.0",
+  "description": "Enhanced Express Router with automatic async/await error handling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "router",
+    "async",
+    "await",
+    "error-handling"
+  ],
+  "author": "@tumblewader",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "methods": "^1.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tumblewader/express-auto-catch-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tumblewader/express-auto-catch-router/issues"
+  },
+  "homepage": "https://github.com/tumblewader/express-auto-catch-router#readme"
+}
