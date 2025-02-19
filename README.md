@@ -32,6 +32,8 @@ Or with yarn:
 yarn add @tumblewader/express-auto-catch-router
 ```
 
+Note: This package is compatible with Express 4.x versions only.
+
 ## Usage
 
 Replace your existing Express router with the enhanced router. For example:
