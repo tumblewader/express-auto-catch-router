@@ -17,6 +17,7 @@ cleaner code without worrying about wrapping every async function with
     signatures.
 -   **Robust Async Detection:** Uses a reliable method to detect async
     functions ensuring only those functions are wrapped.
+-   **Router Options Support:** Accepts all standard Express router options like caseSensitive, strict, and mergeParams.
 
 ## Installation
 
@@ -45,6 +46,13 @@ const AsyncRouter = require('@tumblewader/express-auto-catch-router');
 // Create an instance of the enhanced router
 const router = new AsyncRouter().getRouter();
 
+// Or with router options
+const routerWithOptions = new AsyncRouter({
+  caseSensitive: true,
+  strict: true,
+  mergeParams: true
+}).getRouter();
+
 // Define a route without manual try/catch handling:
 router.get('/user/:id', async (req, res) => {
   // Any error thrown here will be automatically caught and passed to next()
@@ -72,10 +80,16 @@ app.listen(3000, () => console.log('Server running on port 3000'));
 
 ### `AsyncRouter`
 
-#### `constructor()`
+#### `constructor(options)`
 
 Creates a new instance of the enhanced router and automatically patches
 methods for async error handling.
+
+**Parameters**:
+- `options` (Object, optional): Router options object that will be passed to Express's Router.
+  - `caseSensitive` (Boolean): Enable case sensitivity, default: false
+  - `strict` (Boolean): Enable strict routing, default: false
+  - `mergeParams` (Boolean): Preserve req.params values from parent router, default: false
 
 #### `getRouter()`
 

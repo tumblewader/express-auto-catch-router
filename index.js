@@ -5,8 +5,8 @@ const asyncHandler = fn => (req, res, next) =>
   Promise.resolve(fn(req, res, next)).catch(next);
 
 class AsyncRouter {
-  constructor() {
-    this.router = express.Router();
+  constructor(options = {}) {
+    this.router = express.Router(options);
     this._patchMethods();
   }
 
