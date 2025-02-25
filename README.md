@@ -1,5 +1,12 @@
 # Express Auto Catch Router
 
+[![npm version](https://img.shields.io/npm/v/@tumblewader/express-auto-catch-router.svg)](https://www.npmjs.com/package/@tumblewader/express-auto-catch-router)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm downloads](https://img.shields.io/npm/dm/@tumblewader/express-auto-catch-router.svg)](https://www.npmjs.com/package/@tumblewader/express-auto-catch-router)
+[![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/tumblewader/express-auto-catch-router)
+[![Dependencies](https://img.shields.io/badge/dependencies-1-brightgreen.svg)](https://github.com/tumblewader/express-auto-catch-router)
+[![Node.js Version](https://img.shields.io/node/v/@tumblewader/express-auto-catch-router.svg)](https://nodejs.org)
+
 Express Auto Catch Router is an enhanced Express router that
 automatically wraps asynchronous route handlers. This allows you to write
 cleaner code without worrying about wrapping every async function with
